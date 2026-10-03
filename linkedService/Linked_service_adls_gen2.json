@@ -1,0 +1,10 @@
+{
+	"name": "Linked_service_adls_gen2",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://hospadls.dfs.core.windows.net/"
+		}
+	}
+}
