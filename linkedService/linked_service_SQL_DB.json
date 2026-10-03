@@ -1,0 +1,23 @@
+{
+	"name": "linked_service_SQL_DB",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "hosp-sever.database.windows.net",
+			"database": "hosp-db",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "yassiradila",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "linked_service_keyvault",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "SqlDBpassword"
+			}
+		}
+	}
+}
