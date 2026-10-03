@@ -1,0 +1,10 @@
+{
+	"name": "linked_service_keyvault",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://hospDBpassword.vault.azure.net/"
+		}
+	}
+}
